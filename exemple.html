@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Exemple - equalizeHeight" />
+	<meta name="author" content="Daniel Tapias Morales" />
+	<title>teste equalize altura</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="jquery.equalizeHeight.min.js"></script>
+
+	<style type="text/css">
+	body{
+		background: #ddd;
+		font-size: .9em;
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	#top{
+		width: 70%;
+		margin: 25px auto;
+		padding: 0;
+	}
+	#top h1{fon}
+	ul{
+		width: 70%;
+		margin: 25px auto;
+		overflow: hidden;
+		list-style-type: none;
+		padding: 0;
+	}
+
+	ul > li{
+		width: 200px;
+		float: left;
+		border: solid 1px #ccc;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		box-shadow: 2px 2px 3px #ccc;
+		border-radius: 10px;
+		background: #FFF;
+	}
+	li h3, li p{
+		margin: 0;
+		padding: 0;
+		font-size: .9em;		
+	}
+	li h3{
+		color: #888;
+		border-bottom: solid 1px #ddd;
+		margin-bottom: 10px;
+	}
+	code{color:green;}
+	</style>
+
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('ul').children('li').equalizeHeight();
+
+		$(window).resize(function(){
+			$('ul').children('li').equalizeHeight();
+		})
+	})
+	</script>
+</head>
+
+<body>	
+	<div id="top">
+	<h1> </h1>
+	<p></p>
+</div>
+	<ul>
+		<li>
+			<h3>equalizeHeight</h3>
+			<p>It is a plugin Jquery for recalculate de height of elements with float, keeping the layout consize.</p>
+		</li>
+		<li>
+			<h3>Check out</h3>
+			<p>Save this page and try to remove this plugin and check out what happens to each <code>li</code>. </p>
+		</li>
+		<li>
+			<h3>Also</h3>
+			<p>Resize the window and see the magic over the <code>li</code>'s</p>
+		</li>
+		<li>
+			<h3>How can I use?</h3>
+			<p>Just set: <code>$('container').children().<br/>equalizeHeight();</code></p>
+		</li>
+		<li>
+			<h3>And now...</h3>
+			<p>Every <code>li</code> on the same line will have the same height.</p>
+		</li>
+		<li>
+			<h3>Liquid Layout</h3>
+			<p>If you are using a liquid layout, you can call the method whenever the window is resizeble.</p>
+		</li>
+		<li>
+			<h3>Exemple</h3>
+			<p><code>$(window).resize(function(){<br/>
+			$('container').children().<br/>equalizeHeight();<br/>
+		})</code></p>
+		</li>
+		<li>
+			<h3>Easy</h3>
+			<p>Your floats will always became like a table, whith no problem in adjustment Layout.</p>
+		</li>
+		<li>
+			<h3>Enjoy it</h3>
+			<p>;-)</p>
+		</li>
+		
+	</ul>
+	    
+
+</body>
+</html>
