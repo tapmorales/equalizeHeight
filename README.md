@@ -1,5 +1,7 @@
 equalizeHeight
 ==============
+by: Daniel Tapias Morales - <a href="https://twitter.com/tapmorales">@tapmorales</a> <br/>
+
 
 equalizeHeight is a plugin Jquery for recalculate de height of elements with float, keeping the layout consize.
 
@@ -11,3 +13,6 @@ If you have a fluid container, it is interesting that you fix the height again w
 $(window).resize(function(){
     $('container').children().equalizeHeight();
 })
+
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/br/deed.pt"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/br/88x31.png" /></a><br />O trabalho <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Plugin Jquery equalizeHeight</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Daniel Tapias Morales</span> foi licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/br/deed.pt">Creative Commons - Atribuição - CompartilhaIgual 3.0 Brasil</a>.
